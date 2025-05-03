@@ -1,13 +1,7 @@
 [
-  
-      {"name": "BusinessEntityID", "type": "INTEGER", "mode": "REQUIRED"},
-  
-      {"name": "RateChangeDate", "type": "TIMESTAMP", "mode": "REQUIRED"},
-  
-      {"name": "Rate", "type": "FLOAT", "mode": "REQUIRED"},
-  
-      {"name": "PayFrequency", "type": "INTEGER", "mode": "REQUIRED"},
-  
-      {"name": "ModifiedDate", "type": "TIMESTAMP", "mode": "REQUIRED"}
-  
+  {"name": "BusinessEntityID", "type": "INTEGER", "mode": "REQUIRED"},
+  {"name": "RateChangeDate", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name": "Rate", "type": "FLOAT", "mode": "REQUIRED"},
+  {"name": "PayFrequency", "type": "INTEGER", "mode": "REQUIRED"},
+  {"name": "ModifiedDate", "type": "TIMESTAMP", "mode": "REQUIRED"}
 ]
