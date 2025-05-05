@@ -15,5 +15,12 @@
     {"name": "RateChangeDate", "type": "DATE", "mode": "NULLABLE"},
     {"name": "Rate", "type": "FLOAT", "mode": "NULLABLE"},
     {"name": "PayFrequency", "type": "INTEGER", "mode": "NULLABLE"},
-    {"name": "ModifiedDate", "type": "TIMESTAMP", "mode": "REQUIRED"}
+    {"name": "ModifiedDate", "type": "TIMESTAMP", "mode": "REQUIRED"},
+    {"name": "TenureYears", "type": "INTEGER", "mode": "NULLABLE", "description": "Years of tenure based on HireDate"},
+    {"name": "Age", "type": "INTEGER", "mode": "NULLABLE", "description": "Employee's age calculated from BirthDate"},
+    {"name": "YearsSinceRateChange", "type": "INTEGER", "mode": "NULLABLE", "description": "Time since last rate change"},
+    {"name": "IsActive", "type": "BOOLEAN", "mode": "NULLABLE", "description": "Indicates if the employee is active"},
+    {"name": "HourlyRate", "type": "FLOAT", "mode": "NULLABLE", "description": "Normalized hourly pay rate"},
+    {"name": "DepartmentTenureYears", "type": "INTEGER", "mode": "NULLABLE", "description": "Years in current department"},
+    {"name": "RateChangeImpact", "type": "STRING", "mode": "NULLABLE", "description": "Classification of rate change"}
 ]

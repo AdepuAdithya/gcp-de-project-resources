@@ -1,0 +1,10 @@
+[
+    {"name": "BusinessEntityID", "type": "INTEGER", "mode": "REQUIRED"},
+    {"name": "JobTitle", "type": "STRING", "mode": "NULLABLE"},
+    {"name": "DepartmentID", "type": "INTEGER", "mode": "NULLABLE"},
+    {"name": "DepartmentName", "type": "STRING", "mode": "NULLABLE"},
+    {"name": "DepartmentStartDate", "type": "DATE", "mode": "NULLABLE"},
+    {"name": "DepartmentTenureYears", "type": "INTEGER", "mode": "NULLABLE"},
+    {"name": "DepartmentExitDate", "type": "DATE", "mode": "NULLABLE"},
+    {"name": "IsActive", "type": "BOOLEAN", "mode": "NULLABLE"}
+]
