@@ -89,7 +89,7 @@ resource "google_bigquery_table" "EmployeePayHistory_stg_table" {
   dataset_id = google_bigquery_dataset.staging_dataset.dataset_id
   table_id   = "EmployeePayHistory_stg"
   schema     = file("C:/Users/adith/Documents/GitHub/gcp-de-project-resources/bld/staging/EmployeePayHistory_stg.json") # Reusing the same schema file
-
+  deletion_protection = false
   lifecycle {
     prevent_destroy = false
   }
@@ -98,19 +98,8 @@ resource "google_bigquery_table" "EmployeePayHistory_stg_table" {
 
 # Curation Dataset
 resource "google_bigquery_dataset" "curation_dataset" {
-  dataset_id = "employee_details_cur"
+  dataset_id = "Employee_Details_cur"
   location   = var.dataset_location
-
-  lifecycle {
-    prevent_destroy = false
-  }
-}
-
-# Curation Table
-resource "google_bigquery_table" "curation_table" {
-  dataset_id = google_bigquery_dataset.curation_dataset.dataset_id
-  table_id   = "EmployeeDepartmentAndPayHistory_cur"
-  schema     = file("C:/Users/adith/Documents/GitHub/gcp-de-project-resources/bld/curation/EmployeeDepartmentAndPayHistory_cur.json") # Reusing the same schema file
 
   lifecycle {
     prevent_destroy = false
