@@ -160,7 +160,7 @@ resource "google_bigquery_table" "vw_WorkforceDemographics" {
   view {
     query          = <<EOF
     SELECT BusinessEntityID, JobTitle, DepartmentName, Gender, Age, TenureYears, IsActive
-    FROM `gcp-de-batch-sim-458416.Employee_Details_cur.EmployeeDepartmentAndPayHistory_cur`
+    FROM `gcp-de-batch-sim-464816.Employee_Details_cur.EmployeeDepartmentAndPayHistory_cur`
     EOF
     use_legacy_sql = false
   }
@@ -174,7 +174,7 @@ resource "google_bigquery_table" "vw_CompensationTrends" {
     query          = <<EOF
     SELECT BusinessEntityID, JobTitle, DepartmentName, Rate AS CurrentPayRate, 
            PayFrequency, YearsSinceRateChange, RateChangeImpact, HourlyRate
-    FROM `gcp-de-batch-sim-458416.Employee_Details_cur.EmployeeDepartmentAndPayHistory_cur`
+    FROM `gcp-de-batch-sim-464816.Employee_Details_cur.EmployeeDepartmentAndPayHistory_cur`
     EOF
     use_legacy_sql = false
   }
@@ -188,7 +188,7 @@ resource "google_bigquery_table" "vw_DepartmentStabilityMobility" {
     query          = <<EOF
     SELECT BusinessEntityID, JobTitle, DepartmentID, DepartmentName, StartDate AS DepartmentStartDate, 
            DepartmentTenureYears, EndDate AS DepartmentExitDate, IsActive
-    FROM `gcp-de-batch-sim-458416.Employee_Details_cur.EmployeeDepartmentAndPayHistory_cur`
+    FROM `gcp-de-batch-sim-464816.Employee_Details_cur.EmployeeDepartmentAndPayHistory_cur`
     EOF
     use_legacy_sql = false
   }
@@ -203,7 +203,7 @@ resource "google_bigquery_table" "vw_PayrollForecasting" {
     SELECT DepartmentName, COUNT(BusinessEntityID) AS EmployeeCount, 
            SUM(HourlyRate * PayFrequency) AS TotalPayrollCost, 
            AVG(HourlyRate) AS AvgHourlyPayRate
-    FROM `gcp-de-batch-sim-458416.Employee_Details_cur.EmployeeDepartmentAndPayHistory_cur`
+    FROM `gcp-de-batch-sim-464816.Employee_Details_cur.EmployeeDepartmentAndPayHistory_cur`
     WHERE IsActive = TRUE
     GROUP BY DepartmentName
     EOF
