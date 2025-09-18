@@ -6,6 +6,6 @@
   {"name": "EndDate", "type": "DATE", "mode": "NULLABLE"},
   {"name": "ModifiedDate", "type": "TIMESTAMP", "mode": "REQUIRED"},
   {"name": "RawIngestionTime", "type": "TIMESTAMP", "mode": "REQUIRED"},
-  {"name": "RawFileSize", "type": "INTEGER", "mode": "REQUIRED"},
+  {"name": "LoadDate", "type": "DATE", "mode": "REQUIRED"},
   {"name": "StagingIngestionTime", "type":"TIMESTAMP", "mode":"REQUIRED"}
 ]
