@@ -1,6 +1,0 @@
-[
-    {"name": "DepartmentName", "type": "STRING", "mode": "NULLABLE"},
-    {"name": "EmployeeCount", "type": "INTEGER", "mode": "NULLABLE"},
-    {"name": "TotalPayrollCost", "type": "FLOAT", "mode": "NULLABLE"},
-    {"name": "AvgHourlyPayRate", "type": "FLOAT", "mode": "NULLABLE"}
-]
