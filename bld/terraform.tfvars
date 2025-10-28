@@ -1,4 +1,4 @@
-project_id       = "gcp-de-batch-sim-464816"
+project_id       = "gcp-batch-sim"
 region           = "us-central1"
 # credentials_file = "C:\\Users\\adith\\Downloads\\key.json"
 dataset_location = "US"
