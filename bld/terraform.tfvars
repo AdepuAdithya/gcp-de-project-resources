@@ -1,4 +1,3 @@
-project_id       = "gcp-batch-sim"
+project_id       = "famous-athlete-476816-f8"
 region           = "us-central1"
-# credentials_file = "C:\\Users\\adith\\Downloads\\key.json"
-dataset_location = "US"
+dataset_location = "us-central1"
